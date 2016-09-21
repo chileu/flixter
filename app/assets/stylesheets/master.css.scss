@@ -1,2 +1,17 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+
+.navbar-inverse .navbar-brand {
+  color: #D009EB;
+  font-family: 'black_jackregular';
+  font-size: 50px;
+}
+
+.navbar {
+  border-radius: 0;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 300;
+  box-shadow: 0px 1px 3px #2a2a2a;
+  font-size: 18px;
+  background:url('footer_lodyas.png');
+}
