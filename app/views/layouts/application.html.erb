@@ -8,6 +8,7 @@
 </head>
 <body>
 
+<div id="wrap">
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -35,14 +36,25 @@
     </div><!-- /.container-fluid -->
   </nav>
 
-<% if notice.present? %>
-  <p class="notice"><%= notice %></p>
-<% end %>
-<% if alert.present? %>
-  <p class="alert"><%= alert %></p>
-<% end %>
+  <% if notice.present? %>
+    <p class="notice"><%= notice %></p>
+  <% end %>
+  <% if alert.present? %>
+    <p class="alert"><%= alert %></p>
+  <% end %>
 
-<%= yield %>
+  <%= yield %>
+</div>
+
+<br class="clr" />
+
+<div id="footer">
+  <div class="container">
+    <b>Footer Here</b>
+    <br />
+    <%= link_to 'Link', '#' %>
+  </div>
+</div>
 
 </body>
 </html>
