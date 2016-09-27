@@ -2,18 +2,18 @@
 <div class="booyah-box col-xs-10 col-xs-offset-1">
   <h2>Forgot your password?</h2>
 
-  <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-    <%= devise_error_messages! %>
-<br />
-    <div class="field">
-      <%= f.label :email %><br />
-      <%= f.email_field :email, autofocus: true %>
+  <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    <%= f.error_notification %>
+
+    <div class="form-inputs">
+      <%= f.input :email, required: true, autofocus: true %>
+      <br />
     </div>
-<br />
-    <div class="actions">
-      <%= f.submit "Send me reset password instructions", class: "btn btn-success" %>
+
+    <div class="form-actions">
+      <%= f.button :submit, "Send me reset password instructions", class: "btn btn-success" %>
     </div>
   <% end %>
-<br />
+
   <%= render "devise/shared/links" %>
 </div>
