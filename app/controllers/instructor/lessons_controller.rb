@@ -17,7 +17,7 @@ class Instructor::LessonsController < ApplicationController
     if current_section.course.user != current_user
       return render text: 'Unauthorized', status: :Unauthorized
     end
-  end  
+  end
 
   helper_method :current_section
   def current_section
@@ -25,7 +25,7 @@ class Instructor::LessonsController < ApplicationController
   end
 
   def lesson_params
-    params.require(:lesson).permit(:title, :subtitle)
+    params.require(:lesson).permit(:title, :subtitle, :video)
   end
 
 end
