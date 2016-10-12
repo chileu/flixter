@@ -10,10 +10,14 @@
 .navbar {
   border-radius: 0;
   font-family: "Helvetica Neue", Helvetica;
-  font-weight: 300;
+  font-weight: 350;
   box-shadow: 0px 1px 3px #2a2a2a;
-  font-size: 18px;
+  font-size: 20px;
   background:url('sprinkles.png');
+}
+
+.navbar-nav {
+  color: #F02247;
 }
 
 .hero {
@@ -45,6 +49,18 @@ h1, h2, h3, h4, h5, h6, .navbar {
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 200;
   text-shadow: rgba(0,0,0,0.95) 1px 1px;
+}
+
+.features h3 {
+  font-family: "Helvetica Neue", Helvetica;
+  text-shadow: rgba(0,0,0,0.3) 1px 1px;
+  font-weight: 130;
+  color: #3D71A8;
+}
+
+.features p {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 250;
 }
 
 .btn {
